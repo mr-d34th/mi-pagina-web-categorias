@@ -12,7 +12,7 @@ body {
 
 .main-title{text-align: center;}
 .header{background: lightblue;height: 50px;}
-.main{background-image: url(https://thumbs.dreamstime.com/b/categor%C3%ADas-de-mercanc%C3%ADas-internet-tienda-fondo-incons%C3%BAtil-verde-82629999.jpg);height: 1200px;}
+.main{background-image: url(https://thumbs.dreamstime.com/b/categor%C3%ADas-de-mercanc%C3%ADas-internet-tienda-fondo-incons%C3%BAtil-verde-82629999.jpg);width: 100%;}
 .footer{background: lightgreen;height: 200px;}
 
 .main-ul{
@@ -44,39 +44,42 @@ body {
 
 .grupo{
 	border: 1px solid red;
-	height: 1100px;
-	width: auto;
-	margin: 1em 3em;
-	position: relative;
-	background-color: #2c3e50;
-}
-.div-imagen{
-	padding-left: 1em;
-	padding-top: 1em;
-}
-.div-imagen img{
 	width: 90%;
-	height:auto;
+	display: flex;
+	margin: auto;
+	background-color: #2c3e50;
 }
 .grupo-columna{
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 }
-
 .grupo-columna .cards{
     width: 90%;
-	background-color:#2c3e50;
+	background-color:#f2f2f2;
+	display: flex;
+	flex-wrap: wrap;
 }
-
+.div-imagen{
+	width: 50%;
+	padding: 20px;
+	margin: 0 auto;
+}
+.div-imagen img{
+	width: 90%;
+	height:auto;
+}
 .card-body{
 	background-color: rgb(28, 46, 58);
 	border-radius: 1%;
 	text-align: center;
-	width: 60px;
-	margin-left: 17rem;
+	width: 70%;
+	margin: 1% auto;
 	border: solid 3px black;
 }
+
+
+
 
 .cards .card-body {
 	padding: 1.88rem 1.81rem;

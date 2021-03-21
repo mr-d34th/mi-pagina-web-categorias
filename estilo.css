@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/* metologia BEM */
+
+.main-title{text-align: center;}
+.header{background: lightblue;height: 50px;}
+.main{background-image: url(https://thumbs.dreamstime.com/b/categor%C3%ADas-de-mercanc%C3%ADas-internet-tienda-fondo-incons%C3%BAtil-verde-82629999.jpg);height: 1200px;}
+.footer{background: lightgreen;height: 200px;}
+
+.main-ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.main-li{
+	line-height: 3;
+	
+}
+
+.main-a{
+	text-decoration: none;
+	font-size: 1.2em;
+	color:green;
+}
+
+.main-a:hover{
+	background: lawngreen;
+	transition: 1s;
+}
+
+
+
+.grupo{
+	height: 1100px;
+	width: auto;
+	margin: 1em 3em;
+	position: relative;
+	background-color: rgb(127, 190, 44);
+}
+.grupo-columna{
+	column-count: 2;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+}
+
+.div-imagen{
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
+
+.grupo-columna .cards{
+    display: inline-block;
+    width: 100%;
+	background-color: rgb(67, 180, 124);
+}
+
+.card-body{
+	background-color: rgb(28, 46, 58);
+	border-radius: 1%;
+	text-align: center;
+	width: 60px;
+	margin-left: 17rem;
+	border: solid 3px black;
+}
+
+.cards .card-body {
+	padding: 1.88rem 1.81rem;
+  }
+
+.cards{
+	  margin-bottom: 1rem;
+	  border-radius: 1%;
+  }
+
+.footer-div-1{
+	padding-top: 8rem;
+	padding-left: 35em;
+}
+
+#alerta{
+	position: fixed;
+	background-color: blue;
+	margin-left: 20%;
+}
+
+#alerta1{
+	position: fixed;
+	background-color: blue;
+	margin-left: 20%;
+}
+
+#alerta2{
+	position: fixed;
+	background-color: blue;
+	margin-left: 20%;
+}
+
+#alerta3{
+	position: fixed;
+	background-color: blue;
+	margin-left: 20%;
+}

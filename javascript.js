@@ -35,6 +35,7 @@ document.getElementById('id-imagen1').addEventListener('click', function() {
 // })
 
 const añadir = document.getElementById('añadir');
-añadir.addEventListener('click',()=>{
+añadir.addEventListener('click',(e)=>{
+    e.preventDefault()
     document.querySelector('.producto-img').setAttribute('src','img/1.jpg')
 })

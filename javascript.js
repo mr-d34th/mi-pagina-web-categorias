@@ -39,3 +39,8 @@ añadir.addEventListener('click',(e)=>{
     e.preventDefault()
     document.querySelector('.producto-img').setAttribute('src','img/1.jpg')
 })
+
+const close = document.querySelector('.close-modal');
+close.addEventListener('click',()=>{
+    document.querySelector('.modal').style.setProperty('display','none')
+})

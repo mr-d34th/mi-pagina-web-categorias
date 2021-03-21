@@ -81,6 +81,22 @@ body {
 	display: grid;
 	grid-template-columns: repeat(1,1fr);
 }
+.cerrar{
+	width: 100%;
+	font-size: 20px;
+	font-weight: 800;
+	color: rgb(31, 31, 31);
+	text-align: end;
+	padding: 2px;
+}
+.cerrar span{
+	width: 10%;
+}
+.cerrar span:hover{
+	cursor: pointer;
+	background-color: #eb2222;
+	border-radius: 5px;
+}
 .precio-nombre form{
 	display: grid;
 	flex-wrap: wrap;
@@ -167,9 +183,17 @@ footer .descripcion{
 }
 
 /* APLICANDO RESPONSIVE DESIGN */
- @media (max-width:800px){ /*Cuando la vista sea menor a 800px */
+ @media (max-width:800px){ /*Cuando la vista sea menor a 800px (vista tablet) */
 	.grupo-columna {
 		grid-template-columns: repeat(3,1fr);
+	}
+	.card .card-body{
+		height: 200px;
+	}
+}
+@media (max-width:500px){ /*Cuando la vista sea menor a 500px (vista celular) */
+	.grupo-columna {
+		grid-template-columns: repeat(2,1fr);
 	}
 	.card .card-body{
 		height: 200px;

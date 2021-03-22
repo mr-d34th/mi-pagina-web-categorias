@@ -125,3 +125,5 @@ añadir.addEventListener('click',(e)=>{
 //     precio.value=producto.precio
 //     imageProducto.setAttribute('src',producto.imagen)
 //   }
+
+// Hola hol hola

@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Ventas</title>
-    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
     
 
 </head>
 <body>
-    
-<h1 class="main-title">Venta de Productos</h1>
-
-<header class="header">
+<header>
   <nav>
     <ul class="main-ul">
-      <li class="main-li">
-        <a class="main-a" href="#">Inicio</a>
+      <li class="main-li" id="venta">
+        Ventas
       </li>
-      <li class="main-li">
-        <a class="main-a" href="#">Quienes Somos?</a>
+      <li class="main-li" id="cesta">
+        Cesta <span class="carrito-numero">0</span>
       </li>
     </ul>
   </nav>
 </header>
-<main class="main">
+<br>
+<main class="main" id="main">
   <div class="modal">
     <div class="modal-productos">
       <div class="producto">
@@ -34,10 +32,9 @@
         <div class="cerrar">
           <span class="close-modal">X</span>
         </div>
-       
           <input id="nombre" class="nombre" type="text" placeholder="Nombre">
           <input id="precio" class="precio" type="text" placeholder="Precio">
-          <input class="cantidad" type="number">
+          <input class="cantidad" placeholder="Cantidad" type="number">
           <button id="añadir">Añadir</button>
        
       </div>
@@ -46,44 +43,73 @@
   <div class="banner">
     <img src="img/banner.jpg" alt="">
   </div>
-  <div class="grupo">
+  <div class="grupo" id="grupo">
     <div class="grupo-columna" id="todo">
       <div class="card" >
-          <h4 class="titulo card-title" id="titulo">Aceite</h4>
-          <img class="image card-body" src="img/1.jpg" width="580" height="300">
-          <p class="precio card-footer">S/.8</p>
+          <h4 class="titulo card-title" id="titulo">Maquillaje Facil</h4>
+          <img class="image card-body" src="img/1.jpg">
+          <p class="precio card-footer">S/.89</p>
       </div>
 
       <div class="card" >
-        <h4 class="titulo card-title" id="titulo">Cama</h4>
-        <img class="image card-body" src="img/2.jpg" width="580" height="300">
-        <p class="precio card-footer">S/.130</p>
+        <h4 class="titulo card-title" id="titulo">Televisor 50"</h4>
+        <img class="image card-body" src="img/2.jpg">
+        <p class="precio card-footer">S/.1200</p>
       </div>
       <div class="card" >
-        <h4 class="titulo card-title" id="titulo">Pelcuhe</h4>
-        <img class="image card-body" src="img/3.jpg" width="580" height="300">
+        <h4 class="titulo card-title" id="titulo">Peluche</h4>
+        <img class="image card-body" src="img/3.jpg">
+        <p class="precio card-footer">S/.50</p>
+      </div>
+      <div class="card" >
+        <h4 class="titulo card-title" id="titulo">Peine</h4>
+        <img class="image card-body" src="img/4.jpg">
         <p class="precio card-footer">S/.20</p>
       </div>
-
-      
-
+      <div class="card" >
+        <h4 class="titulo card-title" id="titulo">Polo Ligth</h4>
+        <img class="image card-body" src="img/5.jpg">
+        <p class="precio card-footer">S/.20</p>
+      </div>
+      <div class="card" >
+        <h4 class="titulo card-title" id="titulo">Umidigi P9</h4>
+        <img class="image card-body" src="img/6.jpg">
+        <p class="precio card-footer">S/.1300</p>
+      </div>
+      <div class="card" >
+        <h4 class="titulo card-title" id="titulo">Refrigeradora 3000L</h4>
+        <img class="image card-body" src="img/7.jpg">
+        <p class="precio card-footer">S/.2050</p>
+      </div>
+      <div class="card" >
+        <h4 class="titulo card-title" id="titulo">Tv Samsung 32"</h4>
+        <img class="image card-body" src="img/8.jpg">
+        <p class="precio card-footer">S/.800</p>
+      </div>
     </div>
     
 
   </div>
-  <div class="cesta">
-    
-  </div>    
-
+  <div class="contenedor-cesta">
+    <div class="cesta">
+   
+    </div>
+    <div class="total">
+      <h2>TOTAL</h2>
+    </div>
+  </div>
+  
+  
 </main>
 
 <footer>
   <div class="descripcion">
-    <p>Pagina de Jorge Baños Chacon</p>
+    <p>Pagina de Jorge Baños Chacons</p>
   </div>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 
-<script src="javascript.js" language="javascript" type="text/javascript"></script>
 </body>
 </html>

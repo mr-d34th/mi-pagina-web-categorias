@@ -2,21 +2,19 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-body {
-	margin: 0;
-	padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
-	color: #666;
-	font-size: 1em;
-	line-height: 1.5em;
 }
 
 /* metologia BEM */
 
 .main-title{text-align: center;}
-.header{background: lightblue;height: 50px;}
-.main{background-color: #f2f2f2;width: 100%;}
+header{
+	background: lightblue;
+	position: fixed;
+	width: 100%;
+	height: auto;
+}
+.main{background-color: #EAEDED;width: 100%;}
 .main-ul{
 	margin-top: 0;
 	margin-bottom: 0;
@@ -28,27 +26,21 @@ body {
 
 .main-li{
 	line-height: 3;
-	
 }
-
-.main-a{
-	text-decoration: none;
-	font-size: 1.2em;
-	color:green;
+.main-li span{
+	background-color: red;
+	padding: 5px 10px;
+	border-radius: 10px;
 }
-
-.main-a:hover{
-	background: lawngreen;
-	transition: 1s;
+.main-li:hover{
+	cursor: pointer;
+	color: rgb(33, 44, 68);
 }
 .banner{
-	margin: 1% 0;
 	width: 100%;
-	height: 250px;
 }
 .banner img{
 	width: 100%;
-	height: 250px;
 }
 .modal{
 	display: none;
@@ -63,10 +55,11 @@ body {
 	background-color:rgba(0, 0, 0, 0.8)
 }
 .modal .modal-productos{
-	width: 500px;
+	width: 400px;
 	padding: 20px;
 	background-color: #f2f2f2;
 	display: grid;
+	border-radius: 5px;
 	grid-template-columns: repeat(2,1fr);
 }
 .modal-productos .producto{
@@ -74,34 +67,43 @@ body {
 }
 .modal-productos .producto img{
 	max-width: 100%;
+	min-height: 100%;
 }
 .modal-productos .precio-nombre{
 	width: 100%;
 	background-color: #f2f2f2;
 	display: grid;
 	grid-template-columns: repeat(1,1fr);
+	gap: 10px;
 }
-.cerrar{
-	width: 100%;
-	font-size: 20px;
-	font-weight: 800;
-	color: rgb(31, 31, 31);
+.precio-nombre input{
+	padding: 8px 0;
+}
+.precio-nombre button{
+	background-color:rgba(12, 74, 145, 0.671); 
+	border-radius: 5px;
+	padding: 5px;
+	color:#fff;
+}
+.precio-nombre button:hover{
+	cursor: pointer;
+	background-color: rgb(38, 103, 189);
+}
+.precio-nombre .cerrar{
+	color: rgb(129, 126, 126);
 	text-align: end;
-	padding: 2px;
 }
 .cerrar span{
-	width: 10%;
+	font-size: 15px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	padding:5px;
 }
 .cerrar span:hover{
 	cursor: pointer;
-	background-color: #eb2222;
-	border-radius: 5px;
+	color: rgb(2, 23, 48);
 }
-.precio-nombre form{
-	display: grid;
-	flex-wrap: wrap;
-	gap: 10px;
-}
+
 .grupo{
 	width: 90%;
 	display: flex;
@@ -144,35 +146,67 @@ body {
 .card-title h4{
 	font-weight: 300;
 }
-#alerta{
-	position: fixed;
-	background-color: blue;
-	margin-left: 20%;
+/* ESTILOS DE CESTA */
+.contenedor-cesta{
+	display: none;
+	width: 90%;
+	margin: 1% auto;
+	padding: 20px 0px;
 }
-
-#alerta1{
-	position: fixed;
-	background-color: blue;
-	margin-left: 20%;
+.contenedor-cesta .total{
+	max-height: 300px;
+	width: 30%;
+	background-color: #fff;
+	margin: 1% 1%;
+	padding: 10px;
 }
-
-#alerta2{
-	position: fixed;
-	background-color: blue;
-	margin-left: 20%;
+.contenedor-cesta .cesta{
+	display: none;
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	background-color: #fff;
+	margin: 1% 0%;
 }
-
-#alerta3{
-	position: fixed;
-	background-color: blue;
-	margin-left: 20%;
-}
-footer{
-	
+.cesta .carrito{
+	height: auto;
+	margin-bottom: 10px;
 	width: 100%;
-	height: 1%;
-	background-color: #34495e;
+	display: flex;
+	border-bottom: 1px solid #000;
 }
+.carrito img{
+	width: 30%;
+	padding: 10px;
+	border-radius: 10px;
+}
+.carrito .descripcion-cesta{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 10px;
+	flex-wrap: wrap;
+	width: 40%;
+}
+.descripcion-cesta p{
+	width: 100%;
+	text-align: start;
+}
+.carrito .precio-subtotal{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 10px;
+	flex-wrap: wrap;
+	width: 40%;
+}
+.precio-subtotal p{
+	width: 100%;
+	text-align: end;
+}
+
+
 footer .descripcion{
 	width: 90%;
 }

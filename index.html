@@ -28,18 +28,18 @@
   <div class="modal">
     <div class="modal-productos">
       <div class="producto">
-        <img class="producto-img" src="" alt="">
+        <img class="producto-img" id="imgModal" src="" alt="">
       </div>
       <div class="precio-nombre">
         <div class="cerrar">
           <span class="close-modal">X</span>
         </div>
-        <form action="">
-          <input class="nombre" type="text" placeholder="Nombre">
-          <input class="precio" type="text" placeholder="Precio">
+       
+          <input id="nombre" class="nombre" type="text" placeholder="Nombre">
+          <input id="precio" class="precio" type="text" placeholder="Precio">
           <input class="cantidad" type="number">
           <button id="añadir">Añadir</button>
-        </form>
+       
       </div>
     </div>
   </div>
@@ -47,93 +47,33 @@
     <img src="img/banner.jpg" alt="">
   </div>
   <div class="grupo">
-    <div class="grupo-columna ">
-      <div class="card">
-        <div class="card-title">
-          <h4>Aceite</h4>
-        </div>
-        <div class="card-body">
-          <img id="id-imagen1" src="img/1.jpg" width="580" height="300">
-        </div>
-        <div class="card-footer">
-          <p>S/.8</p>
-        </div>
+    <div class="grupo-columna" id="todo">
+      <div class="card" >
+          <h4 class="titulo card-title" id="titulo">Aceite</h4>
+          <img class="image card-body" src="img/1.jpg" width="580" height="300">
+          <p class="precio card-footer">S/.8</p>
       </div>
 
-      <div class="card">
-        <div class="card-title">
-          <h4>Aceite</h4>
-        </div>
-        <div class="card-body">
-          <img id="id-imagen1" src="img/2.jpg" width="580" height="300">
-        </div>
-        <div class="card-footer">
-          <p>S/.8</p>
-        </div>
+      <div class="card" >
+        <h4 class="titulo card-title" id="titulo">Cama</h4>
+        <img class="image card-body" src="img/2.jpg" width="580" height="300">
+        <p class="precio card-footer">S/.130</p>
+      </div>
+      <div class="card" >
+        <h4 class="titulo card-title" id="titulo">Pelcuhe</h4>
+        <img class="image card-body" src="img/3.jpg" width="580" height="300">
+        <p class="precio card-footer">S/.20</p>
       </div>
 
-      <div class="card">
-        <div class="card-title">
-          <h4>Aceite</h4>
-        </div>
-        <div class="card-body">
-          <img id="id-imagen1" src="img/3.jpg" width="580" height="300">
-        </div>
-        <div class="card-footer">
-          <p>S/.8</p>
-        </div>
-      </div>
+      
 
-      <div class="card">
-        <div class="card-title">
-          <h4>Aceite</h4>
-        </div>
-        <div class="card-body">
-          <img id="id-imagen1" src="img/4.jpg" width="580" height="300">
-        </div>
-        <div class="card-footer">
-          <p>S/.8</p>
-        </div>
-      </div>
-
-       <div class="card">
-        <div class="card-title">
-          <h4>Aceite</h4>
-        </div>
-        <div class="card-body">
-          <img id="id-imagen1" src="img/5.jpg" width="580" height="300">
-        </div>
-        <div class="card-footer">
-          <p>S/.8</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <h4>Aceite</h4>
-        </div>
-        <div class="card-body">
-          <img id="id-imagen1" src="img/aceite.jpg" width="580" height="300">
-        </div>
-        <div class="card-footer">
-          <p>S/.8</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-title">
-          <h4>Aceite</h4>
-        </div>
-        <div class="card-body">
-          <img id="id-imagen1" src="img/acondicionador.png" width="580" height="300">
-        </div>
-        <div class="card-footer">
-          <p>S/.8</p>
-        </div>
-      </div>
     </div>
+    
 
-  </div>     
+  </div>
+  <div class="cesta">
+    
+  </div>    
 
 </main>
 

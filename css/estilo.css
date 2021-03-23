@@ -240,8 +240,7 @@ footer .descripcion{
 
 .nave-footer{
 	display: flex;
-	padding-left: 410px;
-	padding-top: 70px;
+
 }
 
 .letra-footer{
@@ -253,7 +252,8 @@ footer .descripcion{
 
 
 /* Aplicando iconos footer facebook y twitter*/
-.fa {
+.nave-footer .fa {
+	
 	padding: 20px;
 	font-size: 30px;
 	width: 50px;
@@ -271,12 +271,14 @@ footer .descripcion{
   
   /* Facebook */
   .fa-facebook {
+
 	background: #3B5998;
 	color: white;
   }
   
   /* Twitter */
   .fa-twitter {
+
 	background: #55ACEE;
 	color: white;
   }
@@ -300,3 +302,4 @@ footer .descripcion{
 		height: 200px;
 	}
 }
+

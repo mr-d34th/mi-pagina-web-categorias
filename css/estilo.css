@@ -212,12 +212,13 @@ footer{
 	display: flex;
 	height: 200px;
 }
-
-footer .descripcion{
-	width: 100%;
-	margin-right: 20px;
+/*	margin-right: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
+*/
+footer .descripcion{
+	width: 92%;
+	margin: auto;
 	border-radius: 0.7%;
 	padding: 20px 20px 20px 20px;
 	background-color: black;
@@ -274,13 +275,15 @@ footer .descripcion{
   .fa-facebook {
 	background: #3B5998;
 	color: white;
+	display: flex;
   }
   
   /* Twitter */
   .fa-twitter {
-
+	
 	background: #55ACEE;
 	color: white;
+	display: flex;
   }
 
 /* -------------------------------------------- */

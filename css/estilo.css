@@ -214,39 +214,40 @@ footer{
 }
 
 footer .descripcion{
-	width: 50%;
+	width: 100%;
 	margin-right: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
 	border-radius: 0.7%;
 	padding: 20px 20px 20px 20px;
 	background-color: black;
-}
-.descripcion p{
-	width: 100%;
-	margin: auto;
-	text-align: center;
 	
 }
-.navegacion-busqueda{
+.descripcion .p-footer-1{
 	width: 50%;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	margin-left: 20px;
-	border-radius: 0.7%;
-	padding: 20px 20px 20px 20px;
-	background-color: black;
+	margin: auto;
+	text-align: center;
 }
 
-.nave-footer{
+.descripcion .p-footer-2{
+	width: 50%;
+	margin: auto;
+	text-align: end;
+}
+
+.descripcion .nave-footer{
 	display: flex;
-
+	
 }
+
+
 
 .letra-footer{
 	padding-top: 20px;
+	text-align: center;
 	display: flex;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 
@@ -271,7 +272,6 @@ footer .descripcion{
   
   /* Facebook */
   .fa-facebook {
-
 	background: #3B5998;
 	color: white;
   }

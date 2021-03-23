@@ -34,16 +34,19 @@ const añadir = document.getElementById('añadir')
 añadir.addEventListener('click',(e)=>{
     let contadorCesta = document.querySelector('.carrito-numero')
     let cantidad = document.querySelector('.cantidad')
+    let subtotal = document.querySelector('.subtotal')
     let longitud =0
     const producto = {
         nombre: document.querySelector('.nombre').value,
         precio: document.querySelector('#precio').value,
         imagen:document.querySelector('#imgModal').src,
-        cantidad:cantidad.value
+        cantidad:cantidad.value,
+        subtotal:precio.value * cantidad.value
     }
     cesta[producto.nombre]= {...producto}
     let llenado = ''
     console.log(cesta)
+    
     Object.values(cesta).forEach(pro =>{
         llenado += `
         
@@ -55,7 +58,7 @@ añadir.addEventListener('click',(e)=>{
         </div>
         <div class="precio-subtotal">
             <p class="precio-cesta">Precio: ${pro.precio}</p>
-            <p class="subtotal">SubTotal: 80 </p>
+            <p class="subtotal">SubTotal: `+subtotal+` </p>
         </div>
    </div>`
     })

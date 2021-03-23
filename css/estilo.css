@@ -206,15 +206,82 @@ header{
 	text-align: end;
 }
 
+/* position relative significa se mantiene todo su estatus*/
+footer{
+	position: relative;
+	display: flex;
+	height: 200px;
+}
 
 footer .descripcion{
-	width: 90%;
+	width: 50%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	border-radius: 0.7%;
+	padding: 20px 20px 20px 20px;
+	background-color: black;
 }
 .descripcion p{
 	width: 100%;
 	margin: auto;
 	text-align: center;
+	
 }
+.navegacion-busqueda{
+	width: 50%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	border-radius: 0.7%;
+	padding: 20px 20px 20px 20px;
+	background-color: black;
+}
+
+.nave-footer{
+	display: flex;
+	padding-left: 410px;
+	padding-top: 70px;
+}
+
+.letra-footer{
+	padding-top: 20px;
+	display: flex;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* Aplicando iconos footer facebook y twitter*/
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+	opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+
+/* -------------------------------------------- */
 
 /* APLICANDO RESPONSIVE DESIGN */
  @media (max-width:800px){ /*Cuando la vista sea menor a 800px (vista tablet) */

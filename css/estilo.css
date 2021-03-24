@@ -42,6 +42,7 @@ header{
 }
 .banner img{
 	width: 100%;
+	min-height: 200px;
 }
 .modal{
 	display: none;
@@ -81,14 +82,14 @@ header{
 	padding: 8px 0;
 }
 .precio-nombre button{
-	background-color:rgba(12, 74, 145, 0.671); 
+	background-color:rgb(4, 81, 168); 
 	border-radius: 5px;
 	padding: 5px;
 	color:#fff;
 }
 .precio-nombre button:hover{
 	cursor: pointer;
-	background-color: rgb(38, 103, 189);
+	background-color: rgb(0, 95, 219);
 }
 .precio-nombre .cerrar{
 	color: rgb(129, 126, 126);
@@ -108,7 +109,7 @@ header{
 .grupo{
 	width: 90%;
 	display: flex;
-	margin:2% auto;
+	margin:4% auto auto auto;
 }
 .grupo-columna{
 	width: 100%;
@@ -150,32 +151,65 @@ header{
 /* ESTILOS DE CESTA */
 .contenedor-cesta{
 	display: none;
+	grid-template-columns: auto auto;
+	grid-gap: 50px;
 	width: 90%;
 	margin: 1% auto;
 	padding: 20px 0px;
 }
+/* Total de la Cesta */
 .contenedor-cesta .total{
-	max-height: 300px;
-	width: 30%;
+	max-height: 200px;
+	width: 100%;
 	background-color: #fff;
-	margin: 1% 1%;
 	padding: 10px;
+	border-radius: 10px;
 }
+.total {
+	display: grid;
+	min-height: 200px;
+}
+.total h3{
+	text-align: center;
+}
+.total .total-venta{
+	display: flex;
+}
+.total-venta p{
+	margin:0 5%;
+}
+.total-venta .total-cesta::before{
+	content: ' S/.';
+}
+.total .comprar{
+	width: 100%;
+	grid-template-columns: repeat(1,1fr);
+	color: #fff;
+	background-color:rgb(226, 15, 15);
+	height: 80%;
+	outline: none;
+	border: 1px solid rgb(226, 15, 15);
+	border-radius: 10px;
+}
+.total .comprar:hover{
+	cursor: pointer;
+	background-color: rgb(250, 8, 8);
+}
+/* ****************** */
 .contenedor-cesta .cesta{
 	display: none;
-	width: 70%;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 10px;
-	background-color: #fff;
-	margin: 1% 0%;
 }
 .cesta .carrito{
 	height: auto;
 	margin-bottom: 10px;
 	width: 100%;
 	display: flex;
-	border-bottom: 1px solid #000;
+	background-color: #fff;
+	border-radius: 10px;
 }
 .carrito img{
 	width: 30%;
@@ -209,9 +243,8 @@ header{
 
 /* position relative significa se mantiene todo su estatus*/
 footer{
-	position: relative;
-	display: flex;
-	height: 200px;
+	background-color:#2c2c54;
+	width: 100%;
 }
 /*	margin-right: 20px;
 	margin-bottom: 20px;
@@ -224,8 +257,6 @@ footer .descripcion{
 	margin: auto;
 	border-radius: 0.7%;
 	padding: 20px 20px 20px 20px;
-	background-color:#2c2c54;
-	
 }
 .descripcion .descripcion-informacion{
 	width: 100%;
@@ -247,39 +278,29 @@ footer .descripcion{
 	list-style: none;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid red;
 	
 }
 .nave-footer p{
 	width: 50%;
 	text-align: center;
+	font-weight: 100;
 }
 .nave-footer li{
 	width: 100%;
-	border: 1px solid #fff;
 	text-align: center;
 }
-
-/* 
-.letra-footer{
-	padding-top: 20px;
-	text-align: center;
-	display: flex;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-} */
-
 
 
 /* Aplicando iconos footer facebook y twitter*/
 .nave-footer .fa {
 	
-	padding: 20px;
-	font-size: 30px;
-	width: 50px;
+	padding: 10px;
+	font-size: 20px;
+	width: 10%;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 50%;
+	justify-content: space-evenly;
   }
   
   /* Add a hover effect if you want */
@@ -294,6 +315,7 @@ footer .descripcion{
 	background: #3B5998;
 	color: white;
 	display: flex;
+
   }
   
   /* Twitter */
@@ -321,6 +343,20 @@ footer .descripcion{
 	}
 	.card .card-body{
 		height: 200px;
+	}
+	.nave-footer .fa{
+		width: 40%;
+	}
+	.contenedor-cesta{
+		grid-template-columns: repeat(1,1fr);
+	}
+	.cesta .carrito{
+		max-height: 100%;
+		padding: 10px;
+	}
+	.total .comprar{
+		font-size:15px;
+		padding:1px;
 	}
 }
 

@@ -32,24 +32,26 @@ const  modal = (hijo)=>{
 const cesta = {}
 const añadir = document.getElementById('añadir')
 añadir.addEventListener('click',(e)=>{
+    let totalCesta = document.querySelector('.total-cesta')
+    let total=0
     let contadorCesta = document.querySelector('.carrito-numero')
     let cantidad = document.querySelector('.cantidad')
-    let subtotal = document.querySelector('.subtotal')
     let longitud =0
     const producto = {
         nombre: document.querySelector('.nombre').value,
         precio: document.querySelector('#precio').value,
         imagen:document.querySelector('#imgModal').src,
         cantidad:cantidad.value,
-        subtotal:precio.value * cantidad.value
     }
     cesta[producto.nombre]= {...producto}
     let llenado = ''
     console.log(cesta)
     
     Object.values(cesta).forEach(pro =>{
+        let subtotal = pro.cantidad * pro.precio
+        total = total+subtotal
         llenado += `
-        
+       
     <div class="carrito">
         <img src="${pro.imagen}" alt="" class="image-cesta">
         <div class="descripcion-cesta">
@@ -70,12 +72,13 @@ añadir.addEventListener('click',(e)=>{
       }
       contadorCesta.textContent =longitud
     cantidad.value = ''
+    totalCesta.textContent = total
 })
 
 // VER CARRITO DE COMPRAS
 document.querySelector('#cesta').addEventListener('click',()=>{
     document.querySelector('.grupo').style.setProperty('display','none')
-    document.querySelector('.contenedor-cesta').style.setProperty('display','flex')
+    document.querySelector('.contenedor-cesta').style.setProperty('display','grid')
     document.querySelector('.banner').style.setProperty('display','none')
 })
 

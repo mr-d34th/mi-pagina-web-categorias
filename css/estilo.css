@@ -221,7 +221,7 @@ footer .descripcion{
 	margin: auto;
 	border-radius: 0.7%;
 	padding: 20px 20px 20px 20px;
-	background-color: black;
+	background-color: #ADD8E6;
 	
 }
 .descripcion .p-footer-1{
@@ -251,7 +251,16 @@ footer .descripcion{
 
 }
 
+.nave-footer{
+	display: grid;
+	
+}
 
+.nave-footer li{
+	list-style: none;
+	padding-top: 10px;
+	padding-left: 10px;
+}
 
 /* Aplicando iconos footer facebook y twitter*/
 .nave-footer .fa {
@@ -262,6 +271,7 @@ footer .descripcion{
 	text-align: center;
 	text-decoration: none;
 	border-radius: 50%;
+	justify-content: space-evenly;
   }
   
   /* Add a hover effect if you want */
@@ -276,6 +286,7 @@ footer .descripcion{
 	background: #3B5998;
 	color: white;
 	display: flex;
+
   }
   
   /* Twitter */
